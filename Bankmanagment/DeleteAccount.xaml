@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="Bankmanagment.DeleteAccount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="213" d:DesignWidth="580">
+    <Grid>
+        <Border Background="White">
+            <Grid>
+                <Grid Name="LayoutRoot">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="#95B9C7" Offset="0" />
+                            <GradientStop Color="White" Offset="1" />
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="31*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="20,20,0,0">
+                        <StackPanel HorizontalAlignment="Left" Margin="0,0,0,10" Name="Header" Orientation="Horizontal">
+                            <TextBlock FontFamily="Calibri" FontSize="18" Margin="5,0,0,0" Name="TextBlockTitle" Text="Delete Account" TextWrapping="NoWrap" VerticalAlignment="Bottom" Width="Auto" />
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Rectangle Height="2" Margin="20,30.6,20,0" VerticalAlignment="Top" Width="auto" />
+                        <Grid Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="230" />
+                                <ColumnDefinition Width="170" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Column="0" Grid.Row="0" Margin="0,0,8,0">
+                                <TextBlock HorizontalAlignment="Right" Name="lblAccountList" Text="Select Account:" VerticalAlignment="Center" Width="auto" />
+                            </Grid>
+                            <Grid Grid.Column="1" Grid.Row="0">
+                                <ComboBox Block.LineHeight="Auto" Block.TextAlignment="Left" BorderBrush="{x:Null}" FontFamily="Tahoma" FontSize="11" FontStyle="Normal" FontWeight="Normal" Height="20" HorizontalAlignment="Stretch" IsSynchronizedWithCurrentItem="True" Margin="5,0,0,0" Name="comboAccountList" Opacity="1" OpacityMask="{x:Null}" VerticalAlignment="Center" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Rectangle Height="2" Margin="20,30.6,20,0" VerticalAlignment="Top" Width="auto" />
+                        <Grid Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="230" />
+                                <ColumnDefinition Width="190" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="30" />
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Column="1" Grid.Row="0" Margin="0,0,8,0">
+                                <Button Click="btnDeleteAccount_Click" Content="Delete Account" Cursor="Hand" Height="20" HorizontalAlignment="Left" Margin="20,0,0,5" Name="btnDelete" VerticalAlignment="Center" Width="133" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
