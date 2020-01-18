@@ -1,0 +1,203 @@
+﻿<UserControl x:Class="Bankmanagment.CreateAccount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="449" d:DesignWidth="922">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Bankmanagment;component/Images/106751586-crop.jpg" />
+    </UserControl.Background>
+    <Grid Name="grid">
+        
+        <Grid Name="LayoutRoot">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="20,20,0,0">
+                <StackPanel HorizontalAlignment="Left" Margin="0,0,0,10" Name="Header" Orientation="Horizontal">
+                    <TextBlock FontFamily="Calibri" FontSize="22" Margin="5,0,0,0" Name="TextBlockTitle" Text="Open New Account" TextWrapping="NoWrap" VerticalAlignment="Bottom" Width="Auto" FontWeight="Bold" Foreground="White" />
+                </StackPanel>
+                <Grid Height="100" HorizontalAlignment="Left" Margin="445,33,0,0" Name="grid4" VerticalAlignment="Top" Width="200" />
+                <Grid Height="27" HorizontalAlignment="Left" Margin="603,36,0,0" Name="grid8" VerticalAlignment="Top" Width="178"></Grid>
+                <Grid Height="30" HorizontalAlignment="Left" Margin="603,33,0,0" Name="grid13" VerticalAlignment="Top" Width="196" />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Rectangle Height="2" Margin="20,30.6,20,0" VerticalAlignment="Top" Width="auto" />
+                <Grid Height="344" Margin="45,6,-45,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="230" />
+                        <ColumnDefinition Width="190" />
+                        <ColumnDefinition Width="419*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="46" />
+                        <RowDefinition Height="34" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="34" />
+                        <RowDefinition Height="6" />
+                    </Grid.RowDefinitions>
+                    <Grid Margin="3,3,5,47" Grid.RowSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="23*" />
+                            <ColumnDefinition Width="95*" />
+                            <ColumnDefinition Width="84*" />
+                            <ColumnDefinition Width="20*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock HorizontalAlignment="Right" Name="name" Text="Name:" VerticalAlignment="Center" Width="auto" Foreground="White" FontWeight="Bold" FontSize="14" Grid.Column="2" Margin="0,6" Grid.ColumnSpan="2" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="0">
+                        <TextBox BorderBrush="{x:Null}" FontFamily="Calibri" FontSize="13" Height="25" HorizontalAlignment="stretch" Margin="0,0,0,5" Name="txt_name" Text="" TextWrapping="NoWrap" VerticalAlignment="Center" />
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="1" Margin="0,0,8,0">
+                        <TextBlock HorizontalAlignment="Right" Name="lblPassword" Text="Present Address:" VerticalAlignment="Center" Width="auto" Foreground="White" FontWeight="Bold" FontSize="14" TextAlignment="Center" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <TextBox Height="49" HorizontalAlignment="Left" Margin="0,1,0,0" Name="txt_presentadress" VerticalAlignment="Top" Width="190" />
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="2" Margin="0,0,8,0">
+                        <TextBlock HorizontalAlignment="Right" Name="lbluserName" Text="Permanent Address:" VerticalAlignment="Center" Width="auto" FontSize="14" Foreground="White" FontWeight="Bold" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="2">
+                        <TextBox Height="40" HorizontalAlignment="Right" Name="txt_prmanentaddress" VerticalAlignment="Top" Width="190" Margin="0,6,0,0" />
+                    </Grid>
+                    <Grid Grid.Row="3" Margin="0,16,8,0" Height="34">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="98*" />
+                            <ColumnDefinition Width="124*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock HorizontalAlignment="Right" Name="lblAddress" Text="Contact Number:" VerticalAlignment="Center" Width="auto" FontWeight="Bold" FontSize="14" Foreground="White" Height="27" Margin="0,-1,0,8" Grid.Column="1" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="3">
+                        <TextBox BorderBrush="{x:Null}" FontFamily="Calibri" FontSize="13" Height="22" HorizontalAlignment="stretch" Margin="0,6" Name="txt_contact" TextWrapping="Wrap" VerticalAlignment="Center" />
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="4" Margin="0,0,8,0">
+                        <TextBlock HorizontalAlignment="Right" Name="lblContactNumber" Text="Email:" VerticalAlignment="Center" Width="auto" Foreground="White" FontWeight="Bold" TextAlignment="Center" FontSize="14" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="4">
+                        <TextBox BorderBrush="{x:Null}" FontFamily="Calibri" FontSize="13" Grid.Column="2" Height="20" HorizontalAlignment="stretch" Margin="0,0,0,0" Name="txt_email" Text="" TextWrapping="NoWrap" VerticalAlignment="Center" />
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="5" Margin="0,0,8,0">
+                        <TextBlock HorizontalAlignment="Right" Name="lblAge" Text=" Date of Birth:" VerticalAlignment="Center" Width="auto" Foreground="White" FontSize="14" TextAlignment="Center" FontWeight="Bold" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="5">
+                        <DatePicker Height="25" HorizontalAlignment="Left" Margin="0,7,0,0" Name="datePic_birth" VerticalAlignment="Top" Width="190" />
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="6" Margin="0,0,8,0">
+                        <TextBlock HorizontalAlignment="Right" Name="lblOccupation" Text="Occupation:" VerticalAlignment="Center" Width="auto" FontWeight="Bold" TextAlignment="Center" Foreground="White" FontSize="14" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="6">
+                        <ComboBox Block.LineHeight="Auto" Block.TextAlignment="Left" FontFamily="Tahoma" FontSize="11" FontStyle="Normal" FontWeight="Normal" Height="25" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="True" Margin="0,0,0,0" Name="comb_occupation" Opacity="1" VerticalAlignment="Center" Width="120">
+                            <ComboBoxItem Content="Service" IsSelected="True" />
+                            <ComboBoxItem Content="Business" />
+                            <ComboBoxItem Content="Self Employee" />
+                        </ComboBox>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="7" Margin="0,0,8,0">
+                        <TextBlock HorizontalAlignment="Right" Name="lblAnnualIncome" Text="Annual Income:" VerticalAlignment="Center" Width="auto" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="White" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="7">
+                        <ComboBox Block.LineHeight="Auto" Block.TextAlignment="Left" FontFamily="Tahoma" FontSize="11" FontStyle="Normal" FontWeight="Normal" Height="25" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="True" Margin="0,0,0,0" Name="comb_annualIncome" Opacity="1" VerticalAlignment="Center" Width="120">
+                            <ComboBoxItem Content="100000" IsSelected="True" />
+                            <ComboBoxItem Content="200000" />
+                            <ComboBoxItem Content="300000" />
+                            <ComboBoxItem Content="400000" />
+                            <ComboBoxItem Content="500000" />
+                            <ComboBoxItem Content="600000" />
+                            <ComboBoxItem Content="700000" />
+                        </ComboBox>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="8" Margin="0,0,8,0">
+                        <TextBlock HorizontalAlignment="Right" Name="lblOpeningAmmount" Text="Opening Ammount:" VerticalAlignment="Center" Width="auto" Foreground="White" FontWeight="Bold" FontSize="14" TextAlignment="Center" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="8">
+                        <ComboBox Block.LineHeight="Auto" Block.TextAlignment="Left" FontFamily="Tahoma" FontSize="11" FontStyle="Normal" FontWeight="Normal" Height="25" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="True" Margin="0,0,0,0" Name="comb_openingAmmount" Opacity="1" VerticalAlignment="Center" Width="120">
+                            <ComboBoxItem Content="10000" IsSelected="True" />
+                            <ComboBoxItem Content="20000" />
+                            <ComboBoxItem Content="30000" />
+                            <ComboBoxItem Content="40000" />
+                            <ComboBoxItem Content="50000" />
+                            <ComboBoxItem Content="60000" />
+                            <ComboBoxItem Content="70000" />
+                        </ComboBox>
+                    </Grid>
+                    <Grid Grid.Column="0" Grid.Row="9" Margin="0,0,8,0">
+                        <TextBlock HorizontalAlignment="Right" Name="lblGender" Text="Gender:" VerticalAlignment="Center" Width="auto" Foreground="White" FontSize="14" TextAlignment="Center" FontWeight="Bold" />
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="9" Height="34" Margin="0,0,0,6" Grid.RowSpan="2">
+                        <RadioButton Content="Male" Height="22" HorizontalAlignment="Left" Margin="9,6,0,0" Name="radioButton1" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Width="66" />
+                        <RadioButton Content="Female" Height="20" HorizontalAlignment="Left" Margin="115,8,0,0" Name="radioButton2" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Width="69" />
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="2" Height="31" HorizontalAlignment="Left" Margin="213,6,0,0" Name="grid2" VerticalAlignment="Top" Width="186">
+                        <ComboBox Height="23" HorizontalAlignment="Left" Margin="0,4,0,0" Name="comb_country" VerticalAlignment="Top" Width="128">
+                            <ComboBoxItem Content="Banhladeh" />
+                            <ComboBoxItem Content="Pakistan" />
+                            <ComboBoxItem Content="Napal" />
+                            <ComboBoxItem Content="India" />
+                            <ComboBoxItem Content="Bangladesh" />
+                        </ComboBox>
+                    </Grid>
+                    <Grid Height="29" HorizontalAlignment="Left" Margin="212,5,0,0" Name="grid1" VerticalAlignment="Top" Width="187" Grid.Column="2" Grid.Row="3">
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="1,1,0,0" Name="txt_telephone" VerticalAlignment="Top" Width="123" />
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="3" Height="31" HorizontalAlignment="Left" Margin="68,3,0,0" Name="grid3" VerticalAlignment="Top" Width="135">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0*" />
+                            <ColumnDefinition Width="200*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="-5,3,0,0" Name="textBlock1" Text="Telephone Number:" VerticalAlignment="Top" Width="140" Foreground="White" TextAlignment="Center" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="2" />
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.RowSpan="2" Height="30" HorizontalAlignment="Left" Margin="63,3,0,0" Name="grid5" VerticalAlignment="Top" Width="140">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="76*" />
+                            <ColumnDefinition Width="64*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="66,7,0,0" Name="textBlock3" Text="SurName:" VerticalAlignment="Top" Width="64" Foreground="White" FontSize="14" TextAlignment="Center" FontWeight="Bold" Grid.ColumnSpan="2" />
+                    </Grid>
+                    <Grid Height="24" HorizontalAlignment="Left" Margin="69,13,0,0" Name="grid6" VerticalAlignment="Top" Width="135" Grid.Column="2" Grid.Row="4" Grid.RowSpan="2">
+                        <TextBlock Height="18" HorizontalAlignment="Left" Margin="0,-1,0,0" Name="textBlock4" Text="Account Create Date:" VerticalAlignment="Top" Width="140" Foreground="White" FontSize="14" TextAlignment="Center" FontWeight="Bold" />
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="4" Height="24" HorizontalAlignment="Left" Margin="221,14,0,0" Name="grid7" VerticalAlignment="Top" Width="181" Grid.RowSpan="2">
+                        <DatePicker Height="25" HorizontalAlignment="Left" Margin="-5,-1,0,0" Name="datePic_createdate" VerticalAlignment="Top" Width="137" />
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="5" Grid.RowSpan="2" Height="25" HorizontalAlignment="Left" Margin="69,7,0,0" Name="grid9" VerticalAlignment="Top" Width="140">
+                        <TextBlock Height="23" Margin="70,0,6,0" Name="textBlock2" Text="Age:" VerticalAlignment="Top" Foreground="White" FontSize="14" FontWeight="Bold" TextAlignment="Center" />
+                        <Grid Height="20" HorizontalAlignment="Left" Margin="153,9,0,0" Name="grid10" VerticalAlignment="Top" Width="180" />
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="5" Grid.RowSpan="2" Height="25" HorizontalAlignment="Left" Margin="216,11,0,0" Name="grid11" VerticalAlignment="Top" Width="183">
+                        <TextBox Height="21" HorizontalAlignment="Left" Name="txt_age" VerticalAlignment="Top" Width="65" />
+                    </Grid>
+                    <Grid Grid.Column="2" Grid.Row="2" Height="36" HorizontalAlignment="Left" Margin="69,10,0,0" Name="grid12" VerticalAlignment="Top" Width="140">
+                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="60,6,0,0" Name="textBlock5" Text="Country:" VerticalAlignment="Top" Width="74" Foreground="White" FontWeight="Bold" TextAlignment="Center" FontSize="14" />
+                    </Grid>
+                    <TextBox Grid.Column="2" Height="23" HorizontalAlignment="Left" Margin="216,3,0,0" Name="txt_surname" VerticalAlignment="Top" Width="125" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Rectangle Height="2" Margin="20,30.6,20,0" VerticalAlignment="Top" Width="auto" />
+                <Grid Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="230" />
+                        <ColumnDefinition Width="190" />
+                        <ColumnDefinition Width="419*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="30" />
+                    </Grid.RowDefinitions>
+                    <Button Content="Next" Height="24" HorizontalAlignment="Left" Margin="0,6,0,0" Name="button1" VerticalAlignment="Top" Width="75" Grid.Column="1" Cursor="Hand" Click="button1_Click_2" />
+                    <Button Content="Cencel" Height="24" HorizontalAlignment="Left" Margin="115,6,0,0" Name="button2" VerticalAlignment="Top" Width="75" Grid.Column="1" Cursor="Hand" Click="button2_Click_1" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
