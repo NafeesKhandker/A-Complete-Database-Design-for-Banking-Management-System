@@ -1,0 +1,17 @@
+﻿<Window x:Class="Bankmanagment.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Eployee" Height="677" Width="1083" Loaded="Window_Loaded">
+    <Grid Height="637" Name="grid1" Width="1065" VerticalAlignment="Top">
+        <Grid Height="102" HorizontalAlignment="Left" Name="grid2" VerticalAlignment="Top" Width="1062"></Grid>
+        <Grid Height="500" HorizontalAlignment="Left" Margin="7,139,0,0" Name="grid3" VerticalAlignment="Top" Width="1052"></Grid>
+        <Menu Height="36" Name="menu1" VerticalAlignment="Top" Margin="0,105,0,0">
+            <MenuItem Click="MenuItem_Click" Header="NewAccount" />
+            <MenuItem Header="Withdraw" Click="MenuItem_Click_1" />
+            <MenuItem Header="AllTransaction" Click="MenuItem_Click_5" />
+            <MenuItem Header="BalanceEquity" Click="MenuItem_Click_3" />
+            <MenuItem Header="Deposite" Click="MenuItem_Click_4" />
+            <MenuItem Header="DeleteAccount" Click="MenuItem_Click_2" />
+        </Menu>
+    </Grid>
+</Window>
