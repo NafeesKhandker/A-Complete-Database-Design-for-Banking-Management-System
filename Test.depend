@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1527874187 source:e:\studies\test\main.cpp
+	<iostream>
+	<vector>
+	<sys/time.h>
+	<cmath>
+	<algorithm>
+	<limits>
+	<stdio.h>
+	<unistd.h>
+	<iostream>
+	<time.h>
+	<stdlib.h>
+	<stack>
+	<queue>
+
