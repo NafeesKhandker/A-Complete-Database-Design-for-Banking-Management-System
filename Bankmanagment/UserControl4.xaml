@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Bankmanagment.UserControl4"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="548" d:DesignWidth="1048">
+   
+    <Grid Height="548" Width="1036">
+        <Border BorderBrush="Silver" BorderThickness="1" Height="76" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="1117" Margin="0,-15,0,0">
+            <Menu Name="menu1" FontWeight="Bold" FontSize="18" Height="40" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center">
+                <Menu.Background>
+                    <SolidColorBrush />
+                </Menu.Background>
+                <MenuItem FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Click="MenuItem_Click" Width="30" Header="                  ">
+                    <MenuItem.Background>
+                        <ImageBrush ImageSource="/Bankmanagment;component/Images/Capture1.JPG" />
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="   " Click="MenuItem_Click_2">
+                    <MenuItem.Background>
+                        <ImageBrush ImageSource="/Bankmanagment;component/Images/Capture2.JPG" />
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="         Client                     " FontWeight="Normal" Foreground="White" Click="MenuItem_Click_1" />
+                <MenuItem FontSize="20" FontWeight="Bold" Foreground="White" Header="  Employe              " HorizontalAlignment="Center" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"></MenuItem>
+            </Menu>
+        </Border>
+        <Grid Height="471" HorizontalAlignment="Left" Margin="0,59,0,0" Name="grid1" VerticalAlignment="Top" Width="992" />
+    </Grid>
+</UserControl>
