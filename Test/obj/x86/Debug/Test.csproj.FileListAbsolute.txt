@@ -1,0 +1,6 @@
+C:\Users\Sheme\Documents\Visual Studio 2010\Projects\Test\Test\bin\Debug\Test.exe
+C:\Users\Sheme\Documents\Visual Studio 2010\Projects\Test\Test\bin\Debug\Test.pdb
+C:\Users\Sheme\Documents\Visual Studio 2010\Projects\Test\Test\obj\x86\Debug\Test.Properties.Resources.resources
+C:\Users\Sheme\Documents\Visual Studio 2010\Projects\Test\Test\obj\x86\Debug\Test.csproj.GenerateResource.Cache
+C:\Users\Sheme\Documents\Visual Studio 2010\Projects\Test\Test\obj\x86\Debug\Test.exe
+C:\Users\Sheme\Documents\Visual Studio 2010\Projects\Test\Test\obj\x86\Debug\Test.pdb
