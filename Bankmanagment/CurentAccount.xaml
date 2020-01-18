@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Bankmanagment.CurentAccount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="234" d:DesignWidth="462">
+    <Grid>
+        <Label Content="Accountnumber" Height="28" HorizontalAlignment="Left" Margin="12,43,0,0" Name="label1" VerticalAlignment="Top" Width="113" />
+        <Label Content="Balance" Height="28" HorizontalAlignment="Left" Margin="12,119,0,0" Name="label2" VerticalAlignment="Top" Width="71" />
+        <Button Content="Autogenerate" Height="23" HorizontalAlignment="Left" Margin="340,48,0,0" Name="button1" VerticalAlignment="Top" Width="110" Click="button1_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="110,48,0,0" Name="textBox1" VerticalAlignment="Top" Width="199" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="112,119,0,0" Name="textBox2" VerticalAlignment="Top" Width="197" />
+        <Button Content="Create" Height="23" HorizontalAlignment="Left" Margin="112,176,0,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" />
+        <Button Content="Back" Height="23" HorizontalAlignment="Left" Margin="234,176,0,0" Name="button3" VerticalAlignment="Top" Width="75" />
+    </Grid>
+</UserControl>
