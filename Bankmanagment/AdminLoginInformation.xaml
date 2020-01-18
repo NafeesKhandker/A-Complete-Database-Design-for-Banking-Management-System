@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="Bankmanagment.AdminLoginInformation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="456" d:DesignWidth="868">
+    <Grid Height="480" Name="grid1" Width="861">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Bankmanagment;component/Images/106751586-crop.jpg" />
+        </Grid.Background>
+        <Grid Margin="12,12,-11,414">
+            <StackPanel HorizontalAlignment="Left" Margin="0,0,0,10" Name="Header" Orientation="Horizontal" />
+            <TextBlock FontFamily="Calibri" FontSize="20" FontWeight="Bold" Foreground="White" Margin="56,14,475,10" Name="TextBlockTitle" Text="Login  Information" TextAlignment="Center" TextWrapping="NoWrap" />
+            <Grid Margin="93,52,145,-375">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="225" />
+                    <ColumnDefinition Width="102" />
+                    <ColumnDefinition Width="58" />
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="228*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="70" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="66" />
+                    <RowDefinition Height="75" />
+                    <RowDefinition Height="34" />
+                    <RowDefinition Height="14*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1" Margin="0,0,8,6" Grid.ColumnSpan="2">
+                    <TextBlock HorizontalAlignment="Right" Name="lblPassword" Text="UserName:" VerticalAlignment="Center" Width="auto" Margin="0,18,6,19" Height="27" FontSize="14" FontWeight="Bold" Foreground="White" />
+                </Grid>
+                <Grid Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,0,0,27">
+                    <TextBox BorderBrush="{x:Null}" FontFamily="Calibri" FontSize="13" Height="27" HorizontalAlignment="stretch" Margin="0,16,0,0" Name="txt_username" TextWrapping="NoWrap" VerticalAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="2" Margin="0,0,8,0" Grid.ColumnSpan="2">
+                    <TextBlock HorizontalAlignment="Right" Name="lbluserName" Text="Password:" VerticalAlignment="Center" Width="auto" Foreground="White" FontWeight="Bold" FontSize="14" />
+                </Grid>
+                <Grid Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="3">
+                    <TextBox BorderBrush="{x:Null}" FontFamily="Calibri" FontSize="13" Height="25" HorizontalAlignment="stretch" Margin="0,5,0,0" Name="txt_password" Text="" TextWrapping="NoWrap" VerticalAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="3" Margin="0,0,8,0" Grid.ColumnSpan="2">
+                    <TextBlock HorizontalAlignment="Right" Name="lblAddress" Text="ReType password:" VerticalAlignment="Center" Width="auto" Foreground="White" FontWeight="Bold" FontSize="14" />
+                </Grid>
+                <Grid Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="3">
+                    <TextBox BorderBrush="{x:Null}" FontFamily="Calibri" FontSize="13" Height="27" HorizontalAlignment="stretch" Margin="0,15,0,8" Name="txt_password1" TextWrapping="Wrap" VerticalAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="4" Margin="0,0,8,0" Grid.ColumnSpan="2">
+                    <TextBlock HorizontalAlignment="Right" Name="lblContactNumber" Text="Sequirity Question:" VerticalAlignment="Center" Width="auto" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="White" />
+                </Grid>
+                <Grid Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3">
+                    <ComboBox Block.LineHeight="Auto" Block.TextAlignment="Left" FontFamily="Tahoma" FontSize="11" FontStyle="Normal" FontWeight="Normal" Height="25" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="True" Margin="0,4,0,0" Name="comb_question" Opacity="1" VerticalAlignment="Center" Width="205">
+                        <ComboBoxItem Content="What is your fist pet?" IsSelected="True" FontSize="14" FontWeight="Normal" />
+                        <ComboBoxItem Content="What is your first Friend's name?" FontSize="13" FontWeight="Bold" />
+                        <ComboBoxItem Content="What is your first Scholl?" />
+                        <ComboBoxItem Content="Self Employee" />
+                    </ComboBox>
+                </Grid>
+                <Grid Grid.Row="5" Margin="0,0,8,0" Grid.ColumnSpan="2">
+                    <TextBlock HorizontalAlignment="Right" Name="lblAge" Text="First Answer:" VerticalAlignment="Center" Width="auto" FontWeight="Bold" Foreground="White" FontSize="13" />
+                </Grid>
+                <Grid Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="3">
+                    <TextBox BorderBrush="{x:Null}" FontFamily="Calibri" FontSize="13" Height="48" HorizontalAlignment="stretch" Margin="0,12,0,6" Name="txt_firstans" Text="" TextWrapping="NoWrap" VerticalAlignment="Center" />
+                </Grid>
+                <Grid Grid.Row="6" Margin="0,0,8,0" Grid.ColumnSpan="2">
+                    <TextBlock HorizontalAlignment="Right" Name="lblOccupation" Text="Second Answer:" VerticalAlignment="Center" Width="auto" Foreground="White" FontWeight="Bold" FontSize="13" />
+                </Grid>
+                <Grid Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="3">
+                    <TextBox BorderBrush="{x:Null}" FontFamily="Calibri" FontSize="13" Height="58" HorizontalAlignment="stretch" Name="txt_secondans" Text="" TextWrapping="NoWrap" VerticalAlignment="Center" Margin="0,22,0,6" />
+                </Grid>
+                <ProgressBar Grid.Column="5" Grid.Row="2" Height="25" HorizontalAlignment="Left" Margin="62,5,0,0" Name="progressBar1" VerticalAlignment="Top" Width="147" BorderBrush="#FF3260CD">
+                    <ProgressBar.Background>
+                        <SolidColorBrush />
+                    </ProgressBar.Background>
+                </ProgressBar>
+                <Button Content="Genarate" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" Margin="71,18,0,0" Name="button1" Width="97" Height="27" VerticalAlignment="Top" BorderBrush="#46000000" FontWeight="Bold" />
+            </Grid>
+        </Grid>
+        <Button BorderBrush="#46000000" Content="Next" FontWeight="Bold" Height="35" HorizontalAlignment="Left" Margin="546,406,0,0" Name="button2" VerticalAlignment="Top" Width="102" Background="#FF001241" Foreground="White" Click="button2_Click" />
+        <Grid Height="40" HorizontalAlignment="Left" Margin="127,401,0,0" Name="grid2" VerticalAlignment="Top" Width="200"></Grid>
+        <Grid Height="44" HorizontalAlignment="Left" Margin="335,401,0,0" Name="grid3" VerticalAlignment="Top" Width="205"></Grid>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="616,224,0,0" Name="comb_userType" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="USER" />
+            <ComboBoxItem Content="Employe" />
+            <ComboBoxItem Content="Admin" />
+        </ComboBox>
+        <Button Background="#FF001241" BorderBrush="#46000000" Content="Calcel" FontWeight="Bold" Foreground="White" Height="35" HorizontalAlignment="Right" Margin="0,406,12,0" Name="button3" VerticalAlignment="Top" Width="102" Click="button3_Click" />
+    </Grid>
+</UserControl>
