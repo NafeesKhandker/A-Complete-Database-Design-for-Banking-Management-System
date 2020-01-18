@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="Bankmanagment.AllTransaction"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="436" d:DesignWidth="804" xmlns:my="http://schemas.microsoft.com/wpf/2008/toolkit">
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Border Background="White">
+                <Grid>
+                    <Grid Name="LayoutRoot">
+                        <Grid.Background>
+                            <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                                <GradientStop Color="#95B9C7" Offset="0" />
+                                <GradientStop Color="White" Offset="1" />
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5" />
+                            <RowDefinition Height="5" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="264*" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Margin="20,20,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33*" />
+                                <ColumnDefinition Width="595*" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Left" Name="Header" Orientation="Horizontal" Width="80.987">
+                                <TextBlock FontFamily="Calibri" FontSize="18" Margin="5,0,0,0" Name="TextBlockTitle" Text="Statement" TextWrapping="NoWrap" VerticalAlignment="Bottom" Width="Auto" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <Rectangle Height="2" Margin="20,30.6,20,0" VerticalAlignment="Top" Width="auto" />
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="20" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Column="1" Grid.Row="0">
+                                    <TextBlock FontFamily="Calibri" FontSize="18" HorizontalAlignment="Left" Margin="5,0,0,0" Name="TextBlockTransaction" Text="All Transaction Details" TextWrapping="NoWrap" VerticalAlignment="Center" Width="Auto" />
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <DataGrid AutoGenerateColumns="True" FontSize="14" FontWeight="Bold" Height="297" HorizontalAlignment="Stretch" HorizontalScrollBarVisibility="Visible" Margin="0,17,0,0" Name="dataGrid1" RowBackground="White" VerticalAlignment="Top" VerticalScrollBarVisibility="Visible" Width="802" Grid.Row="4" Grid.RowSpan="2" SelectionChanged="dataGrid1_SelectionChanged" />
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
