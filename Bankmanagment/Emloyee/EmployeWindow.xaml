@@ -1,0 +1,8 @@
+﻿<Window x:Class="Bankmanagment.Emloyee.EmployeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EmployeWindow" Height="737" Width="855">
+    <Grid>
+        
+    </Grid>
+</Window>
